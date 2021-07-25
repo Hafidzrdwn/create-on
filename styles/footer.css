@@ -1,0 +1,156 @@
+/* Footer */
+footer{
+  margin-top: 180px;
+  padding: 50px 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 520px;
+}
+footer a{
+  text-decoration: none;
+}
+.footer-top{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 110px;
+}
+.footer-top h3{
+  color: #2447f9;
+  letter-spacing: 3px;
+}
+.footer-top h3 span{
+  color:#FF7C5A;
+}
+.footer-icons{
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.footer-icons a i{
+  color: #34364a;
+  transition: .4s;
+}
+a .fa-facebook:hover {
+  color: #4267B2;
+}
+a .fa-youtube:hover {
+  color: #FF0000;
+}
+
+.middle-footer{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.middle-footer ul{
+  list-style: none;
+}
+.middle-footer ul li{
+  margin: 10px 0;
+}
+.middle-footer ul li a{
+  color: #34364a;
+}
+.middle-footer .box:nth-child(1) ul li a:hover,
+.middle-footer .box:nth-child(2) ul li a:hover{
+  color: #2447f9;
+}
+.middle-footer .box > h2{
+  color: #34364a;
+}
+
+
+footer p:last-child{
+  text-align: center;
+  margin-top: 30px;
+  color: #34364ada;
+}
+footer p:last-child i{
+  color: lightcoral;
+}
+
+
+/* footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    color: #34364a;
+    margin-top: 180px;
+  }
+  
+  .footer > * {
+    flex: 1 100%;
+  }
+  
+  .footer-left {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+  }
+  
+  .footer-left h3 {
+    color: #1f3edb;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+  }
+  
+  .footer-left h3 span {
+    color: #ff7c5a;
+  }
+  
+  .footer-left p {
+    padding-right: 20%;
+    margin: 10px 0;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer li {
+    line-height: 2em;
+  }
+  
+  .footer a {
+    text-decoration: none;
+  }
+  
+  .footer-right {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .footer-right > * {
+    flex: 1;
+    margin-right: 1.25em;
+  }
+  
+  .box a {
+    color: #34364a;
+  }
+  
+  .box.hover a:hover {
+    color: #1f3edb;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  .socials a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .socials a i {
+    color: #34364a;
+    /* padding: 10px 12px; */
+/* Akhir dari footer section */

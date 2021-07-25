@@ -1,0 +1,71 @@
+/* Form Section */
+.form{
+    margin-top: 120px;
+    height: 400px;
+}
+.form-wrapper{
+    margin-top: 50px;
+}
+.form-input{
+    width: 40%;
+    padding: 40px ;
+    border-radius: 25px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.123);
+}
+.form-input h3{
+    font-weight: 600 ;
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    color: #34364ada;
+}
+.form-input .inputBox{
+   position: relative;  
+   width: 100%;
+   margin-top: 10px;
+}
+.form-input .inputBox input{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    border: none;
+    margin: 15px 0;
+    border-bottom: 2px solid #34364ada;
+    outline: none;
+}
+.form-input .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: .5s;
+    color: #666;
+}
+.form-input .inputBox input:focus  ~ span,
+.form-input .inputBox input:valid  ~ span{
+    color: #1f3edb;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.form-input .inputBox input[type="submit"]{
+    width: 150px;
+    background-color: #2447F9;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 25px;
+    transition: .3s;
+}
+.form-input .inputBox input[type="submit"]:hover{
+    background-color: #1f3edb;
+}
+.form-img{
+    width: 60%;
+    border-radius: 50%;
+}
+.form-img img{
+    width: 100%;
+}
+/* Akhir dari form section */

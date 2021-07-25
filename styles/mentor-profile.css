@@ -1,0 +1,75 @@
+/* Mentor Profile Section*/
+.mentor {
+    margin-top: 110px;
+    /* text-align: center; */
+  }
+  .profile-wrapper {
+    margin: 40px auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .profile-box {
+    margin: 25px 5px;
+    width: 28%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 25px 30px rgba(0, 0, 0, 0.158);
+  }
+  .profile-box h2 {
+    font-size: 1.5rem;
+    color: #2447F9;
+  }
+  .profile-box p {
+    font-size: 1.1rem;
+    color: #34364ada;
+  }
+  .profile {
+    padding: 40px 50px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .profile h2 { 
+    margin: 20px 0 7px;
+  }
+  .profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .profile img:hover{
+      transform: scale(1.2) rotate(-5deg);
+  }
+  .social {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+  }
+  .social a {
+    text-decoration: none;
+  }
+  .social i {
+    color: #ff7c5a;
+  }
+  a .fab {
+    font-size: 20px;
+    transition: 0.3s;
+  }
+  a .fab:hover {
+    transform: scale(1.4);
+  }
+  a .fa-instagram:hover {
+    color: rgb(255, 0, 98);
+  }
+  a .fa-linkedin-in:hover {
+    color: rgb(0, 140, 255);
+  }
+  a .fa-twitter:hover {
+    color: rgb(8, 121, 214);
+  }
+/* Akhir dari mentor profile section */

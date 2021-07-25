@@ -1,0 +1,334 @@
+/* Responsive Breakpoint */
+@media screen and (min-width: 1440px){
+    .class-card-wrap{
+        height: 550px;
+    }
+    .class-card-wrap:nth-child(1){
+        height: 640px;
+    }
+    .class-card-wrap:nth-child(2){
+        height: 590px;
+    }
+}
+/* Ukuran Tablet */
+@media screen and (max-width: 768px){
+    /* Navbar */
+    nav{
+        width: 90%;
+    }
+    nav ul li a{
+        font-size: 14px;
+    }
+    .btn-utility a{
+        width: 90px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 13px;
+        margin-left: 10px;
+    }
+
+    /* Hero Section */
+    .hero{
+        flex-direction: column;
+    }
+    .hero-image{
+       margin: 10px 0;
+    }
+    .hero-typography{
+        width: 80%;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    h1.hero-heading{
+        font-size: 2.5rem;
+    }
+    p.hero-paragraph{
+        max-width: 90%;
+    }
+    .hero-btn{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    .hero-btn a{
+        width: 100%;
+        margin: 0 0 15px !important;
+        text-align: center;
+    }
+
+    /* Services Section */
+    .service-heading h1{
+        max-width: 100%;
+    }
+    .service-card-wrapper{
+        width: 45%;
+    }
+
+    /* Class Section */
+    .class-heading h1,.mentor-heading h1{
+        max-width: 80%;
+    }
+    .class-card-wrap{
+        width:100%;
+        flex-direction: row;
+        height: 400px !important;
+        padding:30px 0 0;
+        justify-content:center;
+    }
+    .class-card-wrap > img{
+        width: 50%;
+        height: 58%;
+    }
+    .class-description{
+        margin: 0;
+        justify-content: center;
+        margin-left: 20px;
+        height: 50%;
+        width: 40%;
+    }
+    .class-description h1{
+        margin-top: 0;
+    }
+    .class-rating > img{
+        width: 120px;
+    }
+    .card-footer{
+       height: 170px;
+    }
+
+    /* Mentor Profile Section */
+    .mentor-heading h1{
+        font-size: 1.7rem;
+    }
+    .profile-box {
+        width: 45%;
+    }
+    .social {
+    justify-content: center;
+    }
+    .social a {
+    margin: 0 15px;
+    }
+    .profile img:hover {
+    transform: scale(1.2) rotate(-5deg);
+    }
+
+    /* Testimonial Section */
+    .testimonial-heading h1{
+        max-width: 80%;
+    }
+    .testimonial-wrapper{
+        margin: 10px 0 ;
+        flex-direction: column;
+        justify-content: center;
+        height: auto ;
+    }
+    .testimonial-wrapper > img{
+        width: 100%;
+        margin: 20px 0 10px;
+    }
+    .testimonial-card-wrapper{
+        width: 100%;
+    }
+    .testi-description{
+        height: 200px;
+        padding-right: 25px;
+    }
+    .testi-description p{
+        font-size: 1rem;
+    }
+
+    /* Form section */
+    .form{
+        margin-top: 490px !important;
+    }
+    .form-wrapper{
+        flex-direction: column-reverse;
+        margin:190px 0 ;
+    }
+    .form-img{
+        width: 100%;
+    }
+    .form-input{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    footer{
+        margin-top: 250px !important;
+        padding: 50px;
+    }
+    .middle-footer{
+        width: 100%;
+    }
+}
+/* Akhir dari ukuran tablet */
+
+/* Ukuran Mobile */
+@media screen and (max-width: 576px){
+    /* Navbar */
+    nav{
+        width: 100%;
+        padding: 0 30px;
+    }
+    nav ul{
+        border-radius: 35px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        background: #34364A;
+        align-items: center;
+        justify-content: flex-start;
+        z-index: -1;
+        transform: translateY(100%);
+        transition: all .3s .2s;
+    }
+    /* Class untuk memunculkan navbar */
+    nav ul.slide{
+        transform: translateY(38%);
+    }
+    /* Akhir dari class */
+    nav ul li{
+        width: 70%;
+        text-align: center;
+        margin: 40px 0 0;
+        transition: .4s;
+    }
+    nav ul li a{
+        font-size: 1.1em;
+        color: #8d8d8d;
+    }
+    nav ul li a:hover{
+        color: white;
+    }
+    .btn-utility{
+        display: absolute;
+        right: 0;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    .btn-utility a{
+        margin: 20px 0 0;
+        font-size: 1em;
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        color: white !important;
+    }
+    .menu-toggle{
+        display: flex;
+    }
+
+    /* Hero Section */
+    h1.hero-heading{
+        font-size: 2.2rem;
+    }
+    .hero-typography,.hero-image img,.service-card-wrapper{
+        width: 100%;
+    }
+    p.hero-paragraph{
+        max-width: 100%;
+    }
+
+    /* Services Section */
+    .service-heading h3,.class-heading h3,.mentor-heading h3,.testimonial-heading h3,.form-heading h3{
+        font-size: 1rem;
+    }
+    .service-heading h1,.class-heading h1,.mentor-heading h1,.testimonial-heading h1,.form-heading h1{
+        font-size: 1.2rem;
+        max-width: 100%;
+    }
+
+
+    
+    /* Class Section */
+    .class-card-wrap{
+        width: 100%;
+        height:540px !important;
+        flex-direction: column;
+        padding: 20px 30px;
+        margin: 0 0 55px;
+    }
+    .class-card-wrap:nth-child(1){
+        height: 590px !important;
+    }
+    .class-card-wrap:nth-child(2){
+        height: 520px !important;
+    }
+    .class-card-wrap > img{
+        width: 100%;
+        height: auto;
+    }
+    .class-description{
+        margin: 20px 0;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .class-description h1{
+        font-size: 1.1rem;
+    }
+    .card-footer{
+        height: 150px;
+    }
+
+    /* Mentor Profile Section  */
+    .profile-box {
+        width: 100%;
+      } 
+
+    /* Testimonial Section */
+    .testi-description{
+        height: 170px;
+    }
+    .testi-description p{
+        font-size: .6rem;
+    }
+    .testi-profile h3{
+        font-size: .9rem;
+    }
+    .testi-profile span{
+        color: #34364ab7;
+        font-size: .6rem;
+    }
+
+    /* Form section */
+    .form{
+        margin-top: 390px !important;
+    }
+    .form-wrapper{
+        margin-top: 80px !important;
+    }
+    
+  /* Footer */
+  footer{
+    margin-top:180px !important;
+    align-items: center;
+    text-align: center;
+    height: 1100px;
+  }
+  .footer-top{
+      height: 130px;
+  }
+  .footer-icons{
+      width: 60%;
+      margin: 0 auto;
+  }
+  .middle-footer{
+      flex-direction: column;
+      justify-content: space-around;
+      height: 760px;
+  }
+  .middle-footer ul li{
+     margin:20px 0;
+    }
+
+    footer p:last-child{
+        margin-top:0 !important;
+    }
+}
