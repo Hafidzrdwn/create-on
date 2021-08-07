@@ -1,0 +1,96 @@
+.reviews{
+    padding: 50px 0 0;
+    align-items: center;
+}
+.reviews .reviews-heading p{
+    max-width: 60%;
+}
+.reviews .reviews-card-wrapper{
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.review-card{
+    width: 310px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.103);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: .8s all;
+}
+.review-card:nth-child(7),.review-card:nth-child(8),.review-card:nth-child(9),.review-card:nth-child(10),.review-card:nth-child(11),.review-card:nth-child(12){
+    display: none;
+    transform: scale(0);
+}
+.review-card img.user-img{
+    width: 40%;
+    border-radius: 50%;
+}
+.review-card .review-profile span{
+    font-size: .9rem;
+    color: #34364ab4;
+}
+.review-desc,.review-head,.review-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+.review-profile{
+    margin-top: 15px;
+}
+.review-head{
+    justify-content: flex-start;
+    margin-top: 0;
+}
+
+.review-desc p{
+    text-align: left;
+    font-size: .9rem;
+    margin-bottom: 20px;
+}
+.review-desc img{
+    width: 55%;
+}
+
+a.btnMoreReview{
+    width: 200px;
+}
+
+/* Responsive Breakpoint */
+@media screen and (max-width: 768px){
+    .review-card{
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .review-card img.user-img{
+        width: 60%;
+    }
+    .review-head{
+        width: 40%;
+        align-items: center;
+    }
+    .review-profile{
+        align-items: center;
+    }
+    .review-desc{
+        width: 60%;
+    }
+    .review-desc img{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .reviews .reviews-heading p{max-width: 90%;}
+    .review-card{flex-direction: column;}
+    .review-card img.user-img{width: 50%;}
+    .review-head,.review-desc{width: 100%;}
+    .review-card,.review-head,.review-profile{align-items: flex-start;}
+}

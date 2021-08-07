@@ -1,14 +1,23 @@
 /* Form Section */
+.form-heading h1{
+    font-size: 2rem;
+    margin: 10px 0 15px;
+    color: #34364A;
+    text-align: center;
+}
 .form{
-    margin-top: 120px;
-    height: 400px;
+    padding-top: 90px;
+    /* background-color: #1f3edb;  */
 }
 .form-wrapper{
-    margin-top: 50px;
+    margin: 70px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .form-input{
     width: 40%;
-    padding: 40px ;
+    padding: 40px;
     border-radius: 25px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.123);
 }
@@ -23,7 +32,8 @@
    width: 100%;
    margin-top: 10px;
 }
-.form-input .inputBox input{
+.form-input .inputBox input,
+.form-input .inputBox textarea{
     width: 100%;
     padding: 5px 0;
     font-size: 16px;
@@ -31,6 +41,7 @@
     margin: 15px 0;
     border-bottom: 2px solid #34364ada;
     outline: none;
+    resize: none;
 }
 .form-input .inputBox span{
     position: absolute;
@@ -43,7 +54,9 @@
     color: #666;
 }
 .form-input .inputBox input:focus  ~ span,
-.form-input .inputBox input:valid  ~ span{
+.form-input .inputBox input:valid  ~ span,
+.form-input .inputBox textarea:focus ~ span,
+.form-input .inputBox textarea:valid ~ span{
     color: #1f3edb;
     font-size: 12px;
     transform: translateY(-20px);
@@ -61,11 +74,40 @@
 .form-input .inputBox input[type="submit"]:hover{
     background-color: #1f3edb;
 }
-.form-img{
-    width: 60%;
+.form-info{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+}
+.form .info-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 120px;
+}
+.form .info-box i{
+    font-size: 1.6rem;
+    background-color: #2447F9;
+    color:white  !important;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
     border-radius: 50%;
 }
-.form-img img{
-    width: 100%;
+.form .info-box .info-box-desc{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+.info-box-desc h3{
+    color: #FF7C5A;
+}
+.info-box-desc p{
+    color: #34364ada;
+}
+
 /* Akhir dari form section */

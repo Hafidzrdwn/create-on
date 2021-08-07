@@ -1,6 +1,6 @@
 /* Footer */
 footer{
-  margin-top: 180px;
+  /* margin-top: 100px; */
   padding: 50px 80px;
   width: 100%;
   display: flex;
@@ -24,13 +24,13 @@ height: 110px;
 .footer-top h3 span{
   color:#FF7C5A;
 }
-.footer-icons{
+.footer-icons,.about-icons{
   display: flex;
   width: 150px;
   justify-content: space-between;
   font-size: 20px;
 }
-.footer-icons a i{
+.footer-icons a i,.about-icons a i{
   color: #34364a;
   transition: .4s;
 }

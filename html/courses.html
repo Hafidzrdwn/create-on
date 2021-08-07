@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreateOn | Class</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<style>
+    nav ul li:nth-child(3) a{
+      color: #2447f9;
+    }
+    @media screen and (max-width: 576px){
+      nav ul li:nth-child(3) a{
+        color: white !important;
+      }
+    }
+  </style>
+<body>
+      <!-- Navbar -->
+  <nav id="navbar"> 
+    <div class="nav-logo">
+      <h3>Create<span>on</span></h3>
+    </div>
+    <ul class="nav-links">
+      <li><a class="nav-link" href="../index.html">Home</a></li>
+      <li><a class="nav-link" href="about-us.html">About</a></li>
+      <li><a class="nav-link" href="courses.html">Class</a></li>
+      <li><a class="nav-link" href="../index.html#contact">Contact</a></li>
+      <li>
+        <div class="btn-utility">
+          <a href="signup.html">Log in</a>
+          <a href="signup.html">Sign up</a>
+        </div>
+      </li>
+    </ul>
+    <div class="menu-toggle">
+      <input type="checkbox">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <div class="container">
+      <section class="courses">
+          <div class="courses-heading">
+              <h1>Katalog Kelas</h1>
+              <p>Pelajari ilmu terbaru dari mentor yang
+                berpengalaman di bidangnya</p>
+              <lottie-player class="lottie" src="https://assets6.lottiefiles.com/packages/lf20_qkhooyj6.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
+              <h1>All Courses</h1>
+                <ul class="button-filter">
+                  <li class="active">All Courses</li>
+                  <li>Web</li>
+                  <li>Mobile</li>
+                  <li>Design</li>
+                  <li>Free</li>
+                  <li>Other</li>
+                </ul>
+          </div>
+          <div class="courses-card-wrapper">
+            <div class="course-card" data-filter="Web">
+              <img src="../images/Classes-images/fullstackweb.png" alt="fullstack web dev">
+              <div class="course-description">
+                <h1>Full Stack Web Development</h1>
+                <div class="discount-class">
+                  <p>Rp 750,000</p>
+                  <p>Rp 432,000</p>
+                </div>
+                <div class="class-rating">
+                  <img src="../images/rating.png" alt="class rating">
+                  <span>(7,800)</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <p>Sekali Bayar Akses Selamanya</p>
+              </div>
+            </div>
+            <div class="course-card" data-filter="Mobile">
+              <img src="../images/Classes-images/flutterdev.png" alt="flutter dev">
+              <div class="course-description">
+                <h1>Flutter Development</h1>
+                <div class="discount-class">
+                  <p>Rp 620,000</p>
+                  <p>Rp 412,000</p>
+                </div>
+                <div class="class-rating">
+                  <img src="../images/rating.png" alt="class rating">
+                  <span>(6,950)</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <p>Subscribe / Sekali Bayar</p>
+              </div>
+            </div>
+            <div class="course-card" data-filter="Design">
+              <img src="../images/Classes-images/uiux.png" alt="UI UX Design">
+              <div class="course-description">
+                <h1>UI UX Design</h1>
+                <div class="discount-class">
+                  <p>Rp 399,999</p>
+                  <p>Rp 123,000</p>
+                </div>
+                <div class="class-rating">
+                  <img src="../images/rating.png" alt="class rating">
+                  <span>(7,200)</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <p>Sekali Bayar Akses Selamanya</p>
+              </div>
+            </div>
+            <div class="course-card" data-filter="Web">
+              <img src="../images/Classes-images/frontenddev.png" alt="Front-End web dev">
+              <div class="course-description">
+                <h1>Front-End Web Development</h1>
+                <div class="discount-class">
+                  <p>Rp 650,000</p>
+                  <p>Rp 432,000</p>
+                </div>
+                <div class="class-rating">
+                  <img src="../images/rating.png" alt="class rating">
+                  <span>(7,400)</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <p>Subscribe / Sekali Bayar</p>
+              </div>
+            </div>
+            <div class="course-card" data-filter="Mobile">
+              <img src="../images/Classes-images/laravelreact.png" alt="Full-Stack Laravel React Native">
+              <div class="course-description">
+                <h1>Full-Stack Laravel React Native</h1>
+                <div class="discount-class">
+                  <p>Rp 620,000</p>
+                  <p>Rp 412 ,000</p>
+                </div>
+                <div class="class-rating">
+                  <img src="../images/rating.png" alt="class rating">
+                  <span>(7,270)</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <p>Subscribe / Sekali Bayar</p>
+              </div>
+            </div>
+            <div class="course-card" data-filter="Web">
+              <img src="../images/Classes-images/backenddev.png" alt="Back-End web dev">
+              <div class="course-description">
+                <h1>Back-End Web Development</h1>
+                <div class="discount-class">
+                  <p>Rp 650,000</p>
+                  <p>Rp 432,000</p>
+                </div>
+                <div class="class-rating">
+                  <img src="../images/rating.png" alt="class rating">
+                  <span>(6,620)</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <p>Subscribe / Sekali Bayar</p>
+              </div>
+            </div>
+            <div class="course-card" data-filter="Web">
+              <img src="../images/Classes-images/mernstack.png" alt="Full Stack Js dev">
+              <div class="course-description">
+                <h1>Full Stack Javascript Development</h1>
+                <div class="discount-class">
+                  <p>Rp 750,000</p>
+                  <p>Rp 432,000</p>
+                </div>
+                <div class="class-rating">
+                  <img src="../images/rating.png" alt="class rating">
+                  <span>(8,350)</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <p>Sekali Bayar Akses Selamanya</p>
+              </div>
+            </div>
+            <div class="course-card" data-filter="Other">
+              <img src="../images/Classes-images/datascience.png" alt="Data Science With Python">
+              <div class="course-description">
+                <h1>Data Science With Python</h1>
+                <div class="discount-class">
+                  <p>Rp 320,000</p>
+                  <p>Rp 175,000</p>
+                </div>
+                <div class="class-rating">
+                  <img src="../images/rating.png" alt="class rating">
+                  <span>(6,350)</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <p>Subscribe / Sekali Bayar</p>
+              </div>
+            </div>
+            <div class="course-card" data-filter="Mobile">
+              <img src="../images/Classes-images/androiddev.png" alt="Full Stack Android Development">
+              <div class="course-description">
+                <h1>Full Stack Android Development</h1>
+                <div class="discount-class">
+                  <p>Rp 620,000</p>
+                  <p>Rp 412,000</p>
+                </div>
+                <div class="class-rating">
+                  <img src="../images/rating.png" alt="class rating">
+                  <span>(7,750)</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <p>Subscribe / Sekali Bayar</p>
+              </div>
+            </div>
+            <div class="course-card" data-filter="Web">
+              <img src="../images/Classes-images/reactjs.png" alt="React Js With TailwindCss">
+              <div class="course-description">
+                <h1>Master Class React Js With TailwindCss</h1>
+                <div class="discount-class">
+                  <p>Rp 650,000</p>
+                  <p>Rp 432,000</p>
+                </div>
+                <div class="class-rating">
+                  <img src="../images/rating.png" alt="class rating">
+                  <span>(7,775)</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <p>Sekali Bayar Akses Selamanya</p>
+              </div>
+            </div>
+            <div class="course-card" data-filter="Design">
+              <img src="../images/Classes-images/blender3d.png" alt="Blender : Design 3D Illustrasition">
+              <div class="course-description">
+                <h1>Blender : Design 3D Illustrasition</h1>
+                <div class="discount-class">
+                  <p>Rp 255,000</p>
+                  <p>Rp 123,000</p>
+                </div>
+                <div class="class-rating">
+                  <img src="../images/rating.png" alt="class rating">
+                  <span>(4,775)</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <p>Subscribe / Sekali Bayar</p>
+              </div>
+            </div>
+            <div class="course-card" data-filter="Mobile">
+              <img src="../images/Classes-images/flutterdart.png" alt="Flutter & Dart Development">
+              <div class="course-description">
+                <h1>Flutter & Dart Development</h1>
+                <div class="discount-class">
+                  <p>Rp 620,000</p>
+                  <p>Rp 412,000</p>
+                </div>
+                <div class="class-rating">
+                  <img src="../images/rating.png" alt="class rating">
+                  <span>(8,585)</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <p>Subscribe / Sekali Bayar</p>
+              </div>
+            </div>
+            <div class="course-card" data-filter="Design">
+              <img src="../images/Classes-images/uxdesign.png" alt="User Experience Design">
+              <div class="course-description">
+                <h1>UX Design : Usability Testing</h1>
+                <div class="discount-class">
+                  <p>Rp 325,000</p>
+                  <p>Rp 123,000</p>
+                </div>
+                <div class="class-rating">
+                  <img src="../images/rating.png" alt="class rating">
+                  <span>(5,225)</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <p>Sekali Bayar Akses Selamanya</p>
+              </div>
+            </div>
+            <div class="course-card" data-filter="Design">
+              <img src="../images/Classes-images/mobileuidesign.png" alt="Mobile UI Design">
+              <div class="course-description">
+                <h1>Mobile UI Design With Sketch</h1>
+                <div class="discount-class">
+                  <p>Rp 375,000</p>
+                  <p>Rp 123,000</p>
+                </div>
+                <div class="class-rating">
+                  <img src="../images/rating.png" alt="class rating">
+                  <span>(6,425)</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <p>Subscribe / Sekali Bayar</p>
+              </div>
+            </div>
+            <div class="course-card" data-filter="Free">
+              <img src="../images/Classes-images/adbpremier.png" alt="Adobe Premier For Beginner">
+              <div class="course-description">
+                <h1>Adobe Premier For Beginner</h1>
+                <div class="discount-class">
+                  <p></p>
+                  <p>Rp 0</p>
+                </div>
+                <div class="class-rating">
+                  <img src="../images/rating.png" alt="class rating">
+                  <span>(2,225)</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <p>Gratis Akses Selamanya</p>
+              </div>
+            </div>
+            <div class="course-card" data-filter="Free">
+              <img src="../images/Classes-images/adbai.png" alt="Adobe Illustrator For Beginner">
+              <div class="course-description">
+                <h1>Adobe Illustrator For Beginner</h1>
+                <div class="discount-class">
+                  <p></p>
+                  <p>Rp 0</p>
+                </div>
+                <div class="class-rating">
+                  <img src="../images/rating.png" alt="class rating">
+                  <span>(2,525)</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <p>Gratis Akses Selamanya</p>
+              </div>
+            </div>
+            <div class="course-card" data-filter="Free">
+              <img src="../images/Classes-images/adbphotoshop.png" alt="Adobe Photoshop For Beginner">
+              <div class="course-description">
+                <h1>Adobe Photoshop For Beginner</h1>
+                <div class="discount-class">
+                  <p></p>
+                  <p>Rp 0</p>
+                </div>
+                <div class="class-rating">
+                  <img src="../images/rating.png" alt="class rating">
+                  <span>(3,725)</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <p>Gratis Akses Selamanya</p>
+              </div>
+            </div>
+            <div class="course-card" data-filter="Free">
+              <img src="../images/Classes-images/javadev.png" alt="Java Development For Beginner">
+              <div class="course-description">
+                <h1>Java Development For Beginner</h1>
+                <div class="discount-class">
+                  <p></p>
+                  <p>Rp 0</p>
+                </div>
+                <div class="class-rating">
+                  <img src="../images/rating.png" alt="class rating">
+                  <span>(2,825)</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <p>Gratis Akses Selamanya</p>
+              </div>
+            </div>
+            <div class="course-card" data-filter="Other">
+              <img src="../images/Classes-images/dataanalysist.png" alt="Data Analysist With R and Python">
+              <div class="course-description">
+                <h1>Learn Data Analysist</h1>
+                <div class="discount-class">
+                  <p>Rp 320,000</p>
+                  <p>Rp 175,000</p>
+                </div>
+                <div class="class-rating">
+                  <img src="../images/rating.png" alt="class rating">
+                  <span>(6,770)</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <p>Subscribe / Sekali Bayar</p>
+              </div>
+            </div>
+            <div class="course-card" data-filter="Other">
+              <img src="../images/Classes-images/cybersecurity.png" alt="Cyber Security Course">
+              <div class="course-description">
+                <h1>Learn Cyber Security</h1>
+                <div class="discount-class">
+                  <p>Rp 475,000</p>
+                  <p>Rp 225,000</p>
+                </div>
+                <div class="class-rating">
+                  <img src="../images/rating.png" alt="class rating">
+                  <span>(6,666)</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <p>Subscribe / Sekali Bayar</p>
+              </div>
+            </div>
+            <div class="course-card" data-filter="Other">
+              <img src="../images/Classes-images/machinelearning.png" alt="Machine Learning Course">
+              <div class="course-description">
+                <h1>Machine Learning Bootcamp</h1>
+                <div class="discount-class">
+                  <p>Rp 475,000</p>
+                  <p>Rp 225,000</p>
+                </div>
+                <div class="class-rating">
+                  <img src="../images/rating.png" alt="class rating">
+                  <span>(6,756)</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <p>Subscribe / Sekali Bayar</p>
+              </div>
+            </div>
+          </div>
+      </section>
+  </div>
+  <footer>
+    <div class="footer-top">
+      <h3>Create<span>on</span></h3>
+      <p>Let's begin your own study journey</p>
+      <div class="footer-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="middle-footer">
+      <div class="box">
+        <h2>Products</h2>
+        <ul>
+          <li><a href="#">Online Course</a></li>
+          <li><a href="#">Online Bootcamp</a></li>
+          <li><a href="#">Ebook</a></li>
+          <li><a href="#">Design Resources</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <h2>Company</h2>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Our Timeline</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <h2>Address</h2>
+        <ul>
+          <li>PT CourseOn Indonesia</li>
+          <li>Jl. in aja dulu</li>
+          <li>Surabaya,</li>
+          <li>Indonesia</li>
+        </ul>
+      </div>
+    </div>
+    <p>Createon &copy; 2021 , Made with <i class="fas fa-heart"></i> by @hafidzrdwn</p>
+  </footer>
+</body>
+<script src="https://kit.fontawesome.com/ba150134be.js" crossorigin="anonymous"></script>
+<script src="../script.js"></script>
+</html>

@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Index html */
 @import "navbar.css"; @import "hero.css";
 @import "services.css"; @import "classes.css";
 @import "mentor-profile.css"; @import "testimonial.css";
-@import "form.css"; @import "footer.css";
+@import "form.css"; @import "footer.css"; @import "regist.css";
 @import "responsive.css";
 
+/* About html */
+@import "aboutus.css";
+@import "courses.css";
+@import "reviews.css";
 /* WEBSITE STYLE */
 *{
     margin: 0;
@@ -12,10 +17,16 @@
     box-sizing:border-box;
     font-family:'Poppins', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 .container{
+    padding-top: 90px;
     width:80%;
-    margin: 120px auto;
+    margin: 0 auto 30px;
     background-color: white;
 }
+
+
 
 

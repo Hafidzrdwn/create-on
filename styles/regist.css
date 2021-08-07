@@ -1,0 +1,25 @@
+.registration{
+    padding: 50px 0 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.registration img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.registration h1{
+    max-width: 100%;
+    margin: 0;
+}
+.registration p{
+    max-width: 60%;
+    margin: 10px 0 20px;
+    color: #34364ada;
+}
+.registration a{
+    width: 250px;
+}

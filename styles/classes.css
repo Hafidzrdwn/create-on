@@ -2,11 +2,10 @@
 .class-card-wrap{
     cursor: pointer;
     width: 29%;
-    height:490px;
+    height:550px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    padding: 20px 30px ;
     margin: 0 0 55px;
     position: relative;
     z-index: 1;
@@ -15,19 +14,19 @@
     overflow: hidden;
     transition: all .3s;
 }
-.class-card-wrap:nth-child(1){
+/* .class-card-wrap:nth-child(1){
     height: 560px;
 }
 .class-card-wrap:nth-child(2){
     height: 520px;
-}
+} */
 .class-card-wrap > img{
     width: 100%;
 }
 .class-description{
     display: flex;
     flex-direction: column;
-    margin: 20px 0;
+    margin: 20px 0 20px 20px;
 }
 .class-description h1{
     font-size: 1.4rem;

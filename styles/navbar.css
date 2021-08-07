@@ -23,8 +23,11 @@ nav.sticky{
     font-weight: 700;
     font-size: 22px;
     font-family: 'poppins', sans-serif;;
-    color: #2447F9;
     letter-spacing: 3px;
+}
+.nav-logo h3 a{
+    text-decoration: none;
+    color: #2447F9;
 }
 
 .nav-logo h3 span {

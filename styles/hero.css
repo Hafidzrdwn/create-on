@@ -4,8 +4,9 @@
     justify-content: space-between;
     align-items: center;
   }
-  .hero-image{
-      margin-right: -60px;
+  .hero-image .lottie{
+      width: 533px;
+      height: 460px;
   }
   .hero-typography{
       display: flex;
@@ -24,7 +25,7 @@
     color: #34364A;
     max-width: 90%;
   }
-  .hero-btn a,.class-btn,.testi-btn{
+  .hero-btn a,.class-btn,.testi-btn,.registration a,a.btnMoreReview{
     background-color: #2447F9;
     text-decoration: none;
     padding: 12px 20px;
@@ -40,7 +41,7 @@
       border: 1px solid #2447F9;
       margin-left: 10px;
   }
-  .hero-btn a:first-child:hover,.class-btn:hover,.testi-btn:hover{
+  .hero-btn a:first-child:hover,.class-btn:hover,.testi-btn:hover, .registration a:hover, a.btnMoreReview:hover{
       background-color: #1f3edb;
   }
  

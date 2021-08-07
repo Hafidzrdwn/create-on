@@ -1,19 +1,19 @@
 /* Services Section */
 .services,
 .classes,.testimonial,.form{
-margin-top: 100px;
+padding-top: 100px;
 display: flex;
 flex-direction: column;
 justify-content: center;
 }
 .service-heading h3,
-.class-heading h3,.mentor-heading h3,.testimonial-heading h3,.form-heading h3{
+.class-heading h3,.mentor-heading h3,.testimonial-heading h3{
     color: #1f3edb;
     font-size: 1.3rem;
     font-weight: 500;
 }
 .service-heading h1,
-.class-heading h1,.mentor-heading h1,.testimonial-heading h1,.form-heading h1{
+.class-heading h1,.mentor-heading h1,.testimonial-heading h1,.registration h1{
     font-size: 2rem;
     max-width: 60%;
     margin: 10px 0 20px;
@@ -37,7 +37,7 @@ justify-content: center;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.164);
-    transition: all .3s;
+    transition: .3s all;
 }
 .service-card-wrapper:hover,.class-card-wrap:hover{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.253);

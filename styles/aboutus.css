@@ -1,0 +1,114 @@
+section.about-us{
+    width: 100%;
+    position: relative;
+    line-height: 0;
+    margin: 30px 0 90px;
+}
+.about-us img{
+    width: 60%;
+}
+.about-desc{
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    padding: 30px;
+    transform: translateY(-50%);
+    height: 90%;
+    width: 40%;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.24);
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.about-desc h2{
+    font-size: 1.8rem;
+    max-width: 80%;
+    color: #34364A;
+}
+.about-desc p{
+    margin: 15px 0 30px;
+    color: #34364ada;
+}
+.member-info{
+    /* background-color: rgba(255, 255, 255, 0.493); */
+    display: flex;
+    justify-content: space-between;
+    line-height: normal;
+    position: absolute; 
+    bottom: 0;
+    padding: 20px;
+    width: 450px;
+    border-radius: 0 20px 0 0;
+}
+.member-info .member-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.member-box span.member-sum{
+    color: #FF7C5A;
+}
+.member-box span.member-title{
+    color: white;
+    font-size: .8rem;
+}
+/* Responsive Breakpoint */
+@media screen and (max-width: 768px){
+    section.about-us{height:656px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.288);}
+    .about-us img{width: 100%;}
+    .about-desc{
+        top: 530px;
+        left: 0;
+        transform: translateY(-50%);
+        height: auto;
+        width: 100%;
+        box-shadow: none;
+    }
+    .member-info{
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,-30%);
+        padding: 20px;
+        width: 450px;
+    }
+    .about-us .human{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px){
+    section.about-us{
+        height:510px; 
+        margin: 10px 0 35px !important;
+    }
+    .about-desc{
+        top: 362px;
+        left: 0;
+        border-radius: 0;
+    }
+    .about-desc h2{
+        font-size: 1.5rem;
+        max-width: 100%;
+    }
+    .about-desc p{
+        font-size: .8rem;
+    }
+    .member-info{
+        top: 43%;
+        left: 50%;
+        transform: translate(-50%,-30%);
+        padding: 35px;
+        width: 350px;
+    }
+    .member-box span.member-sum{
+        font-size: .7rem;
+    }
+    .member-box span.member-title{
+        font-size: .6rem;
+    }
+    .about-us .human{
+        display: none;
+    }
+}
