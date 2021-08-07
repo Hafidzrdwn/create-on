@@ -191,11 +191,13 @@
         justify-content: flex-start;
         z-index: -1;
         transform: translateY(100%);
+        opacity: 0;
         transition: all .3s .2s;
     }
     /* Class untuk memunculkan navbar */
     nav ul.slide{
         transform: translateY(38%);
+        opacity: 1;
     }
     /* Akhir dari class */
     nav ul li{
