@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+</head>
+<style>
+    body{
+        background-image: url(images/bg-question.jpg);
+        background-repeat: no-repeat;
+    }
+</style>
+<body>
+    <!-- HTML FOR USER WHO NOT USING CHROME -->
+</body>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+      Swal.fire({
+      title: 'Apakah anda membuka web ini di chrome?',
+      text: "tekan tombol dibawah!",
+      icon: 'warning',
+      showCancelButton: true,
+      cancelButtonColor: '#d33',
+      confirmButtonColor: '#2ecc71',
+      confirmButtonText: 'Ya benar',
+      cancelButtonText:'Tidak',
+    }).then((result) => {
+      if (result.isConfirmed) {
+          window.location.href = `html/signup.html`
+      }
+      else if(result.dismiss === Swal.DismissReason.cancel){
+        window.location.href = 'link.html'
+      }
+    })
+</script>
+</html>
