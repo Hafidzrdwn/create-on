@@ -5,8 +5,8 @@
     align-items: center;
   }
   .hero-image .lottie{
-      width: 533px;
-      height: 460px;
+    width: 533px;
+    height: 460px;
   }
   .hero-typography{
       display: flex;

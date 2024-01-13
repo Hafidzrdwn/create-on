@@ -1,10 +1,10 @@
 /* Services Section */
 .services,
 .classes,.testimonial,.form{
-padding-top: 100px;
-display: flex;
-flex-direction: column;
-justify-content: center;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .service-heading h3,
 .class-heading h3,.mentor-heading h3,.testimonial-heading h3{
@@ -40,7 +40,7 @@ justify-content: center;
     transition: .3s all;
 }
 .service-card-wrapper:hover,.class-card-wrap:hover{
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.253);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.200);
 }
 .service-card-wrapper img{
     width: 60px;
@@ -49,10 +49,12 @@ justify-content: center;
     margin: 30px 0 10px;
     font-size: 1.3rem;
     text-align: center;
+    user-select: none;
 }
 .service-card-wrapper p{
     text-align: center;
     font-size: .9rem;
     color: #34364ada;
+    user-select: none;
 }
 /* Akhir dari services section */

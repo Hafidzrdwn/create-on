@@ -6,8 +6,9 @@
     max-width: 60%;
 }
 .reviews .reviews-card-wrapper{
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 20px;
+    column-gap: 75px;
 }
 .review-card{
     width: 310px;

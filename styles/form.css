@@ -54,9 +54,10 @@
     color: #666;
 }
 .form-input .inputBox input:focus  ~ span,
-.form-input .inputBox input:valid  ~ span,
 .form-input .inputBox textarea:focus ~ span,
-.form-input .inputBox textarea:valid ~ span{
+.form-input .inputBox input:valid  ~ span,
+.form-input .inputBox textarea:valid ~ span
+{
     color: #1f3edb;
     font-size: 12px;
     transform: translateY(-20px);

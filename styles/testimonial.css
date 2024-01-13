@@ -24,7 +24,7 @@
     display: flex;
     align-items: center;
     border-radius: 25px;
-    padding: 20px 0;
+    padding: 25px 0;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.123);
 }
 .testi-profile{
@@ -35,7 +35,7 @@
     align-items: center;
 }
 .testi-profile > img{
-    width: 55%;
+    width: 45%;
     border-radius: 50%;
 }
 .testi-profile h3{

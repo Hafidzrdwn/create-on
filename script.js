@@ -41,16 +41,58 @@ btnItem.forEach(btn =>{
 const loadMoreReviews = document.querySelector("a.btnMoreReview");
 const reviewCards = document.querySelectorAll(".review-card");
 
-loadMoreReviews.addEventListener("click", (e)=>{
+if (loadMoreReviews) {
+   loadMoreReviews.addEventListener("click", (e)=>{
+      e.preventDefault();
+      reviewCards.forEach((reviewCard,index) => {
+         if(index > 5){
+               reviewCard.style.display = "flex"
+               setTimeout(() => {
+                  reviewCard.style.transform = "scale(1)"
+               }, 10);  
+         }
+      });
+   });
+}
+
+// HOME ALERT
+const formContact = document.querySelector(".form-contact");
+
+formContact.addEventListener("submit", (e) => {
    e.preventDefault();
-   reviewCards.forEach((reviewCard,index) => {
-      if(index > 5){
-            reviewCard.style.display = "flex"
-            setTimeout(() => {
-               reviewCard.style.transform = "scale(1)"
-            }, 10);  
+
+   // mailto
+   const name = document.querySelector(".contact-name").value;
+   const email = document.querySelector(".contact-email").value;
+   const message = document.querySelector(".contact-msg").value;
+
+   if (!name.trim() || !email.trim()) {
+      Swal.fire({
+         title: "Error",
+         text: "Mohon isi form dengan benar!",
+         icon: "error",
+         button: "OK",
+         confirmButtonColor: "#2447F9",
+      });
+      return false
+   }
+
+   Swal.fire({
+      title: "Redirect Warning",
+      text: "Anda akan dialihkan ke aplikasi email anda!",
+      icon: "info",
+      button: "OK",
+      showCancelButton: true,
+      reverseButtons: true,
+      confirmButtonColor: "#2447F9",
+      cancelButtonColor: "#34364A",
+   }).then((result) => {
+      if (result.isConfirmed) {
+         window.location.href = `mailto:createon@gmail.com?subject=Contact%20from%20${name}&body=${message}`;
       }
    });
+
+   formContact.reset();
 });
 
 

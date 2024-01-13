@@ -6,17 +6,18 @@ section.about-us{
 }
 .about-us img{
     width: 60%;
+    border-radius: 10px;
 }
 .about-desc{
     position: absolute;
     top: 50%;
-    right: 40px;
+    right: 20px;
     padding: 30px;
     transform: translateY(-50%);
-    height: 90%;
-    width: 40%;
+    height: auto;
+    width: 50%;
     background-color: white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.24);
     line-height: normal;
     display: flex;
     flex-direction: column;
@@ -25,7 +26,7 @@ section.about-us{
 .about-desc h2{
     font-size: 1.8rem;
     max-width: 80%;
-    color: #34364A;
+    color: #2447F9;
 }
 .about-desc p{
     margin: 15px 0 30px;
@@ -38,6 +39,7 @@ section.about-us{
     line-height: normal;
     position: absolute; 
     bottom: 0;
+    left: 20px;
     padding: 20px;
     width: 450px;
     border-radius: 0 20px 0 0;
@@ -56,59 +58,37 @@ section.about-us{
 }
 /* Responsive Breakpoint */
 @media screen and (max-width: 768px){
-    section.about-us{height:656px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.288);}
-    .about-us img{width: 100%;}
-    .about-desc{
-        top: 530px;
-        left: 0;
-        transform: translateY(-50%);
-        height: auto;
-        width: 100%;
-        box-shadow: none;
-    }
-    .member-info{
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%,-30%);
-        padding: 20px;
-        width: 450px;
-    }
-    .about-us .human{
-        display: none;
+    .about-desc {
+        right: 20px !important;
     }
 }
 
 @media screen and (max-width: 576px){
-    section.about-us{
-        height:510px; 
-        margin: 10px 0 35px !important;
+    section.about-us {
+        height: max-content;
     }
-    .about-desc{
-        top: 362px;
-        left: 0;
-        border-radius: 0;
+    .about-desc {
+        position: relative;
+        box-shadow: none;
+        width: 100% !important;
+        right: 0 !important;
+        top: 0 !important;
+        bottom: 0 !important;
+        transform: translateY(0) !important;
     }
-    .about-desc h2{
-        font-size: 1.5rem;
-        max-width: 100%;
+    .member-info {
+        width: 100% !important;
+        top: 100px;
+        text-align: center;
     }
-    .about-desc p{
-        font-size: .8rem;
+    .member-box span.member-sum {
+        background-color: #34364a;
+        font-size: 17px;
     }
-    .member-info{
-        top: 43%;
-        left: 50%;
-        transform: translate(-50%,-30%);
-        padding: 35px;
-        width: 350px;
-    }
-    .member-box span.member-sum{
-        font-size: .7rem;
-    }
-    .member-box span.member-title{
-        font-size: .6rem;
-    }
-    .about-us .human{
-        display: none;
+
+    .member-box span.member-title {
+        background-color: #FF7C5A;
+        color: #34364a;
+        font-size: .7rem !important;
     }
 }

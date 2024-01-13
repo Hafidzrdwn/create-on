@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Createon | Home</title>
+  <title>Createon - Home</title>
   <link rel="shortcut icon" href="images/iconweb.svg" type="image/x-icon">
   <!-- AOS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -14,10 +14,10 @@
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <style>
-  nav ul li:first-child a{
+  nav ul li:first-child a {
     color: #2447f9;
   }
-  @media screen and (max-width: 576px){
+  @media screen and (max-width: 576px) {
     nav ul li:first-child a{
       color: white !important;
     }
@@ -36,7 +36,7 @@
       <li><a class="nav-link" href="#contact">Contact</a></li>
       <li>
         <div class="btn-utility">
-          <a href="html/signup.html">Log in</a>
+          <a href="html/login.html">Log in</a>
           <a href="html/signup.html">Sign up</a>
         </div>
       </li>
@@ -69,7 +69,6 @@
       </div>
       <div class="hero-image">
         <lottie-player class="lottie" src="https://assets9.lottiefiles.com/packages/lf20_7y1ooqs1.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
-        <!-- <img src="images/hero-img.png" alt="hero image"> -->
       </div>
     </section>
     <!-- Akhir Hero Section -->
@@ -200,9 +199,9 @@
           <div class="profile">
             <img src="images/mentors/man3.jpg" alt="">
             <div class="social">
-              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="https://twitter.com/hafidzrdwn/" target="_blank"><i class="fab fa-twitter"></i></a>
               <a href="https://www.instagram.com/hafidzrdwn/" target="_blank"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/hafidz-ridwan-cahya-b54426215/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.linkedin.com/in/hafidzrdwn/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
             <h2>Hafidz Ridwan</h2>
             <p>CEO</p>
@@ -282,21 +281,21 @@
       <div class="form-wrapper">
         <div class="form-input">
           <h3>Send Message</h3>
-          <form action="">
+          <form autocomplete="off" class="form-contact">
             <div class="inputBox">
-              <input type="text" required="required">
+              <input class="contact-name" type="text" required>
               <span>Nama Lengkap</span>
             </div>
             <div class="inputBox">
-              <input type="text" required="required">
+              <input class="contact-email" type="text" required>
               <span>Email</span>
             </div>
             <div class="inputBox">
-              <textarea required="required"></textarea>
+              <textarea class="contact-msg" required></textarea>
               <span>Ketik pesanmu..</span>
             </div>
             <div class="inputBox">
-              <input type="submit" required="required" value="Kirim">
+              <input type="submit" value="Kirim">
             </div>
           </form>
         </div>
@@ -305,7 +304,7 @@
             <i class="fas fa-map-marker-alt"></i>
             <div class="info-box-desc">
               <h3>Address</h3>
-              <p>PT CourseOn Indonesia Jl. in aja dulu Surabaya, Indonesia</p>
+              <p>PT CreateOn Indonesia Jl. in aja dulu Surabaya, Indonesia</p>
             </div>
           </div>
           <div class="info-box">
@@ -319,7 +318,7 @@
             <i class="fas fa-envelope"></i>
             <div class="info-box-desc">
               <h3>Email</h3>
-              <p>courseoncompany@gmail.com</p>
+              <p>createon@gmail.com</p>
             </div>
           </div>
         </div>
@@ -367,20 +366,18 @@
       <div class="box">
         <h2>Address</h2>
         <ul>
-          <li>PT CourseOn Indonesia</li>
+          <li>PT CreateOn Indonesia</li>
           <li>Jl. in aja dulu</li>
           <li>Surabaya,</li>
           <li>Indonesia</li>
         </ul>
       </div>
     </div>
-    <p>Copyright &copy; 2021 CreateOn , Made with <i class="fas fa-heart"></i> by @hafidzrdwn</p>
+    <p>Copyright &copy; 2021-2024 CreateOn , Made with <i class="fas fa-heart"></i> by <a href="https://instagram.com/hafidzrdwn" target="_blank">@hafidzrdwn</a></p>
   </footer>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
-
-
 <script>
   gsap.registerPlugin(TextPlugin);
   gsap.to('.hero-heading', {duration:2.5,delay:.4, text:"Let's begin your study journey"})
@@ -388,5 +385,6 @@
   gsap.from('.hero-paragraph',{duration:2.5,opacity:0,ease:'slow'})
 </script>
 <script src="https://kit.fontawesome.com/ba150134be.js" crossorigin="anonymous"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="script.js"></script>  
 </html>

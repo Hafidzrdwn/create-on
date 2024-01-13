@@ -11,7 +11,7 @@
     flex-direction: column;
 }
 .courses .courses-heading h1, .reviews .reviews-heading h1{
-    font-size: 2rem;
+    font-size: 2.7rem;
     color: #34364A;
 }
 .courses .courses-heading h1:nth-child(4){
@@ -21,6 +21,7 @@
     color: #34364ada;
     max-width: 40%;
     margin: 10px auto;
+    font-size: 17px;
 }
 .courses .courses-heading .lottie{
     width: 70%;
@@ -29,10 +30,12 @@
 .courses-heading ul{
     list-style: none;
     margin: 35px 0 0;
-    width: 90%;
-    white-space: nowrap;
+    width: 100%;
+    text-align: start;
+    white-space: wrap;
 }
 .courses-heading ul li{
+    text-align: center;
     background-color: #e8eaf0;
     color: black;
     display: inline-block;
@@ -43,6 +46,7 @@
     line-height: 45px;
     transition: .4s all;
     cursor: pointer;
+    margin-bottom: 22px;
 }
 .courses-heading ul li:hover{
     background-color: #d7d9df;
@@ -64,8 +68,8 @@
 .courses-card-wrapper .course-card{
     cursor: pointer;
     background-color: #f5f6ff;
-    width: 29%;
-    height: 455px;
+    width: 295px;
+    height: 475px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -84,6 +88,7 @@
     font-size: 1.3rem;
     max-width: 95%;
     text-align: left;  
+    user-select: none;
 }
 .course-card-footer{
     background-color: #2447f9;
@@ -111,6 +116,7 @@
         width: 44%;
     }
     .courses-heading ul{
+        white-space: nowrap !important;
         width: 100%;
         overflow-x: scroll;
         padding-bottom: 10px;

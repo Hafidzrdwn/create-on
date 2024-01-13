@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background-color: #f6f8fd;
+}
+
+.forms-container {
+  position: relative;
+  width: 100%;
+  height: max-content;
+}
+
+.form-img {
+  width: 40%;
+  position: fixed;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form-wrapper {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 75px 0;
+}
+.form-logo {
+  width: fit-content;
+}
+.form-logo > img {
+  width: 40px;
+}
+
+.form-description {
+  margin: 45px 0;
+}
+.form-description h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #34364A;
+}
+.form-description p {
+  color: #34364ada;
+  font-size: 17px;
+  margin-top: 15px;
+}
+/* .form-description p > .desktop {
+  display: none;
+} */
+.form-input {
+  background-color: #fff;
+  border-radius:16px;
+  width: max-content;
+  padding: 35px 45px;
+}
+.form-title {
+  font-size: 1.8rem;
+  color: #2447f9;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  background-color: #e5e9f2;
+  margin-bottom: 20px;
+  height: 55px;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  position: relative;
+}
+
+.input-field i {
+  text-align: center;
+  line-height: 55px;
+  color: #34364ada;
+  transition: 0.5s;
+  font-size: 1.1rem;
+}
+
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #34364A;
+}
+
+.input-field input::placeholder {
+  color: #8f8f8f;
+  font-weight: 500;
+}
+
+.form-btn {
+  cursor: pointer;
+  width: 100%;
+  background-color: #2447F9;
+  padding: .8rem 0;
+  border: none;
+  border-radius: 55px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  transition: all .3s;
+}
+.form-btn:hover {
+  background-color: #1f3edb;
+}
+
+.social-text {
+  text-align: center;
+  margin: 25px 0 20px;
+  font-size: 1rem;
+  color: #34364ada;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  height: 46px;
+  width: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.45rem;
+  color: #34364A;
+  border-radius: 50%;
+  border: 1px solid #34364A;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  color: #2447F9;
+  border-color: #2447F9;
+}
+
+.form-link  {
+  color: #979797;
+  margin-top: 18px;
+  text-align: center;
+  font-size: 15px;
+}
+.form-link a {
+  color: #2447F9;
+}
+
+/* RESPONSIVE BREAKPOINT */
+@media screen and (max-width: 992px) {
+  .form-img {
+    display: none;
+  }
+  
+  .form-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 50px 20px;
+  }
+  .form-input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .form-description p {
+    font-size: 16px;
+  }
+  .form-description p > .desktop {
+    display: none;
+  }
+
+}
