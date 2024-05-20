@@ -37,9 +37,9 @@
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.164);
-    transition: .3s all;
+    transition: .3s all !important;
 }
-.service-card-wrapper:hover,.class-card-wrap:hover{
+.service-card-wrapper:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.200);
 }
 .service-card-wrapper img{

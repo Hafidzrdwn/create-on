@@ -8,7 +8,7 @@
   <title>Createon - Home</title>
   <link rel="shortcut icon" href="images/iconweb.svg" type="image/x-icon">
   <!-- AOS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- My Style -->
   <link rel="stylesheet" href="styles/style.css">
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -17,15 +17,17 @@
   nav ul li:first-child a {
     color: #2447f9;
   }
+
   @media screen and (max-width: 576px) {
-    nav ul li:first-child a{
+    nav ul li:first-child a {
       color: white !important;
     }
   }
 </style>
+
 <body>
   <!-- Navbar -->
-  <nav id="navbar"> 
+  <nav id="navbar">
     <div class="nav-logo">
       <h3><a href="#">Create<span>on</span></a></h3>
     </div>
@@ -49,7 +51,6 @@
     </div>
   </nav>
 
-  <!-- Content selanjutnya tinggal masukin ke dalam container -->
   <div class="container">
     <!-- Hero Section -->
     <section class="hero">
@@ -68,7 +69,8 @@
         </div>
       </div>
       <div class="hero-image">
-        <lottie-player class="lottie" src="https://assets9.lottiefiles.com/packages/lf20_7y1ooqs1.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
+        <lottie-player class="lottie" src="https://assets9.lottiefiles.com/packages/lf20_7y1ooqs1.json"
+          background="transparent" speed="1" loop autoplay></lottie-player>
       </div>
     </section>
     <!-- Akhir Hero Section -->
@@ -76,43 +78,46 @@
     <!-- Services Section -->
     <section id="about" class="services">
       <div class="service-heading">
-        <h3>Why Choose Us</h3>
-        <h1>Platform Belajar Online
+        <h3 
+        data-aos="fade-up"
+        data-aos-offset="265"
+        >Why Choose Us</h3>
+        <h1 data-aos="fade-right" data-aos-duration="600" data-aos-offset="270">Platform Belajar Online
           Berkurikulum Internasional</h1>
       </div>
       <div class="services-card-wrap">
         <div class="service-card-wrapper">
-            <img src="images/icons/folder.webp" alt="">
+          <img src="images/icons/folder.webp" alt="">
           <h3>Studi Kasus</h3>
           <p>Kita akan belajar membangun sebuah
             real-world project di bidang IT</p>
         </div>
         <div class="service-card-wrapper">
-            <img src="images/icons/chat.webp" alt="">
+          <img src="images/icons/chat.webp" alt="">
           <h3>Konsultasi</h3>
           <p>Gabung dengan private group untuk
             berkonsultasi dengan mentor kelas</p>
         </div>
         <div class="service-card-wrapper">
-            <img src="images/icons/clock.webp" alt="">
+          <img src="images/icons/clock.webp" alt="">
           <h3>Lifetime Access</h3>
           <p>Mempelajari dan memahami materi
             kelas lebih santai tanpa batasan waktu</p>
         </div>
         <div class="service-card-wrapper">
-            <img src="images/icons/offline.webp" alt="">
+          <img src="images/icons/offline.webp" alt="">
           <h3>Offline Mode</h3>
           <p>Pelajari materi kelas tanpa
             harus terhubung dengan Internet</p>
         </div>
         <div class="service-card-wrapper">
-            <img src="images/icons/bag.webp" alt="">
+          <img src="images/icons/bag.webp" alt="">
           <h3>Portfolio</h3>
           <p>Pelajari dan miliki hasil karya untuk
             membangun karir masa depan</p>
         </div>
         <div class="service-card-wrapper">
-            <img src="images/icons/certificate.webp" alt="">
+          <img src="images/icons/certificate.webp" alt="">
           <h3>Bersertifikat Resmi</h3>
           <p>Selesaikan kelas dan projek dan
             dapatkan sertifikat dari kami</p>
@@ -124,8 +129,9 @@
     <!-- Class Section -->
     <section id="class" class="classes">
       <div class="class-heading">
-        <h3>Top Classes</h3>
-        <h1>Mari Kita Tingkatkan
+        <h3 data-aos="fade-up"
+        data-aos-offset="265">Top Classes</h3>
+        <h1 data-aos="fade-right" data-aos-duration="600" data-aos-offset="270">Mari Kita Tingkatkan
           Keahlian Desain dan Kode</h1>
       </div>
       <div class="classes-card-wrapper">
@@ -144,7 +150,11 @@
           </div>
           <div class="card-footer">
             <p>Subscribe / Sekali Bayar</p>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#2447f9" fill-opacity="1" d="M0,0L48,26.7C96,53,192,107,288,106.7C384,107,480,53,576,69.3C672,85,768,171,864,176C960,181,1056,107,1152,64C1248,21,1344,11,1392,5.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+              <path fill="#2447f9" fill-opacity="1"
+                d="M0,0L48,26.7C96,53,192,107,288,106.7C384,107,480,53,576,69.3C672,85,768,171,864,176C960,181,1056,107,1152,64C1248,21,1344,11,1392,5.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+              </path>
+            </svg>
           </div>
         </div>
         <div class="class-card-wrap">
@@ -152,17 +162,21 @@
           <div class="class-description">
             <h1>Flutter Development</h1>
             <div class="discount-class">
-            <p>Rp 620,000</p>
-            <p>Rp 412,000</p>
-          </div>
-          <div class="class-rating">
-            <img src="images/rating.webp" alt="class rating">
-            <span>(4,800)</span>
-          </div>
+              <p>Rp 620,000</p>
+              <p>Rp 412,000</p>
+            </div>
+            <div class="class-rating">
+              <img src="images/rating.webp" alt="class rating">
+              <span>(4,800)</span>
+            </div>
           </div>
           <div class="card-footer">
             <p>Subscribe / Sekali Bayar</p>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#2447f9" fill-opacity="1" d="M0,0L48,26.7C96,53,192,107,288,106.7C384,107,480,53,576,69.3C672,85,768,171,864,176C960,181,1056,107,1152,64C1248,21,1344,11,1392,5.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+              <path fill="#2447f9" fill-opacity="1"
+                d="M0,0L48,26.7C96,53,192,107,288,106.7C384,107,480,53,576,69.3C672,85,768,171,864,176C960,181,1056,107,1152,64C1248,21,1344,11,1392,5.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+              </path>
+            </svg>
           </div>
         </div>
         <div class="class-card-wrap">
@@ -170,17 +184,21 @@
           <div class="class-description">
             <h1>UI UX Design</h1>
             <div class="discount-class">
-            <p>Rp 399,999</p>
-            <p>Rp 123,000</p>
-          </div>
-          <div class="class-rating">
-            <img src="images/rating.webp" alt="class rating">
-            <span>(6,200)</span>
-          </div>
+              <p>Rp 399,999</p>
+              <p>Rp 123,000</p>
+            </div>
+            <div class="class-rating">
+              <img src="images/rating.webp" alt="class rating">
+              <span>(6,200)</span>
+            </div>
           </div>
           <div class="card-footer">
             <p>Sekali Bayar Akses Selamanya</p>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#2447f9" fill-opacity="1" d="M0,0L48,26.7C96,53,192,107,288,106.7C384,107,480,53,576,69.3C672,85,768,171,864,176C960,181,1056,107,1152,64C1248,21,1344,11,1392,5.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+              <path fill="#2447f9" fill-opacity="1"
+                d="M0,0L48,26.7C96,53,192,107,288,106.7C384,107,480,53,576,69.3C672,85,768,171,864,176C960,181,1056,107,1152,64C1248,21,1344,11,1392,5.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+              </path>
+            </svg>
           </div>
         </div>
       </div>
@@ -191,8 +209,9 @@
     <!-- Mentor Section -->
     <section class="mentor">
       <div class="mentor-heading">
-        <h3>Our Mentor</h3>
-        <h1>Belajar Bersama Mentor Berpengalaman Di Bidangnya</h1>
+        <h3 data-aos="fade-up"
+        data-aos-offset="265">Our Mentor</h3>
+        <h1 data-aos="fade-right" data-aos-duration="600" data-aos-offset="270">Belajar Bersama Mentor Berpengalaman Di Bidangnya</h1>
       </div>
       <div class="profile-wrapper">
         <div class="profile-box">
@@ -238,12 +257,13 @@
     <!-- Testimonial Section -->
     <section class="testimonial">
       <div class="testimonial-heading">
-        <h3>Class Review</h3>
-        <h1>Membangun Hasil Karya
+        <h3 data-aos="fade-up"
+        data-aos-offset="265">Class Review</h3>
+        <h1 data-aos="fade-right" data-aos-duration="600" data-aos-offset="270">Membangun Hasil Karya
           Yang Bermanfaat</h1>
       </div>
       <div class="testimonial-wrapper">
-        <img src="images/testimonial-img.webp" alt="">
+        <img  src="images/testimonial-img.webp" alt="">
         <div class="testimonial-card-wrapper">
           <div class="testi-card">
             <div class="testi-profile">
@@ -373,18 +393,43 @@
         </ul>
       </div>
     </div>
-    <p>Copyright &copy; 2021-2024 CreateOn , Made with <i class="fas fa-heart"></i> by <a href="https://instagram.com/hafidzrdwn" target="_blank">@hafidzrdwn</a></p>
+    <p>Copyright &copy; 2021-2024 CreateOn , Made with <i class="fas fa-heart"></i> by <a
+        href="https://instagram.com/hafidzrdwn" target="_blank">@hafidzrdwn</a></p>
   </footer>
 </body>
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- GSAP -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
 <script>
+  const serviceCardWrappers = document.querySelectorAll('.service-card-wrapper');
+
+  serviceCardWrappers.forEach((serviceCardWrapper, index) => {
+    serviceCardWrapper.setAttribute('data-aos', 'zoom-out');
+    serviceCardWrapper.setAttribute('data-aos-offset', '265');
+  });
+
+  const classCardWraps = document.querySelectorAll('.class-card-wrap');
+
+  classCardWraps.forEach((classCardWrap, index) => {
+    classCardWrap.setAttribute('data-aos', 'fade-zoom-in');
+    classCardWrap.setAttribute('data-aos-easing', 'ease-in-back');
+    classCardWrap.setAttribute('data-aos-offset', '245');
+  });
+
+  AOS.init({
+    once: true
+  });
+
+
   gsap.registerPlugin(TextPlugin);
-  gsap.to('.hero-heading', {duration:2.5,delay:.4, text:"Let's begin your study journey"})
-  gsap.from('#navbar',{duration:1.5, y:-100,ease:'bounce'})
-  gsap.from('.hero-paragraph',{duration:2.5,opacity:0,ease:'slow'})
+  gsap.to('.hero-heading', { duration: 2.5, delay: .4, text: "Let's begin your study journey" })
+  gsap.from('#navbar', { duration: 1.5, y: -100, ease: 'bounce' })
+  gsap.from('.hero-paragraph', { duration: 2.5, opacity: 0, ease: 'slow' })
 </script>
 <script src="https://kit.fontawesome.com/ba150134be.js" crossorigin="anonymous"></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="script.js"></script>  
+<script src="script.js"></script>
+
 </html>

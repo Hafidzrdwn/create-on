@@ -57,42 +57,60 @@ if (loadMoreReviews) {
 
 // HOME ALERT
 const formContact = document.querySelector(".form-contact");
-
-formContact.addEventListener("submit", (e) => {
-   e.preventDefault();
-
-   // mailto
-   const name = document.querySelector(".contact-name").value;
-   const email = document.querySelector(".contact-email").value;
-   const message = document.querySelector(".contact-msg").value;
-
-   if (!name.trim() || !email.trim()) {
+if (formContact) {
+   formContact.addEventListener("submit", (e) => {
+      e.preventDefault();
+   
+      // mailto
+      const name = document.querySelector(".contact-name").value;
+      const email = document.querySelector(".contact-email").value;
+      const message = document.querySelector(".contact-msg").value;
+   
+      if (!name.trim() || !email.trim()) {
+         Swal.fire({
+            title: "Error",
+            text: "Mohon isi form dengan benar!",
+            icon: "error",
+            button: "OK",
+            confirmButtonColor: "#2447F9",
+         });
+         return false
+      }
+   
       Swal.fire({
-         title: "Error",
-         text: "Mohon isi form dengan benar!",
-         icon: "error",
+         title: "Redirect Warning",
+         text: "Anda akan dialihkan ke aplikasi email anda!",
+         icon: "info",
          button: "OK",
+         showCancelButton: true,
+         reverseButtons: true,
          confirmButtonColor: "#2447F9",
+         cancelButtonColor: "#34364A",
+      }).then((result) => {
+         if (result.isConfirmed) {
+            window.location.href = `mailto:createon@gmail.com?subject=Contact%20from%20${name}&body=${message}`;
+         }
       });
-      return false
-   }
+   
+      formContact.reset();
+   });
+}
 
-   Swal.fire({
-      title: "Redirect Warning",
-      text: "Anda akan dialihkan ke aplikasi email anda!",
-      icon: "info",
-      button: "OK",
-      showCancelButton: true,
-      reverseButtons: true,
-      confirmButtonColor: "#2447F9",
-      cancelButtonColor: "#34364A",
-   }).then((result) => {
-      if (result.isConfirmed) {
-         window.location.href = `mailto:createon@gmail.com?subject=Contact%20from%20${name}&body=${message}`;
+// search 
+const search = document.getElementById("search");
+
+search.addEventListener("keyup", (e) => {
+   const searchValue = e.target.value.toLowerCase();
+   const courseCard = document.querySelectorAll(".course-card");
+
+   courseCard.forEach((card) => {
+      const title = card.querySelector(".course-description h1").textContent.toLowerCase();
+
+      if (title.includes(searchValue)) {
+         card.style.display = "flex";
+      } else {
+         card.style.display = "none";
       }
    });
-
-   formContact.reset();
 });
-
 
